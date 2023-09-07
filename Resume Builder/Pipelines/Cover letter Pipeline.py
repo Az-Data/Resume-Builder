@@ -41,7 +41,7 @@ print("Loading LLM into GPU memory")
 # it is suggested to pin the revision commit hash and not change it for reproducibility because the uploader might change the model afterwards; you can find the commmit history of llamav2-7b-chat in https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/commits/main
 model = "meta-llama/Llama-2-7b-chat-hf"
 revision = "0ede8dd71e923db6258295621d817ca8714516d4"
-token = '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' # Token from huggingface website - JG
+token = ""
 
 tokenizer = AutoTokenizer.from_pretrained(model, padding_side="left", use_auth_token = token)
 pipeline = transformers.pipeline(
